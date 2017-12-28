@@ -166,6 +166,42 @@ p {
 		}
 }
 
+.community {
+	width: 100%;
+	background-color: $bg-light;
+	padding: 90px;
+	text-align: center;
+	.logo-green {
+		padding: 65px 0 30px 0;
+	}
+	h3 {
+		color: $text-dark;
+	}
+	p {
+		font-size: 12px;
+		padding: 0 40px 40px;
+		line-height: 18px;
+	}
+	.community-slide {
+		padding-right: 16px;
+	}
+}
+
+.community-slider {
+	font-size: 10px;
+	font-weight: 700;
+	transition: .5s;
+	text-align: right;
+	a {
+		font-size: 22px;
+		margin-right: 10px;
+		color: $text-dark;
+		text-decoration: none;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
 
 @media(min-width: 768px) and (max-width: 992px) {
 	li.nav-logo {
@@ -193,7 +229,8 @@ p {
 		}
 	}
 
-	.promo-block-design {
-		
+	.community-slide {
+		padding-bottom: 20px;
 	}
+
 }
