@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif; }
+
+.btn-themed {
+  display: inline-block;
+  margin: 20px 0;
+  border: none;
+  background-color: #1abc9c;
+  border-radius: 4px;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: .5s; }
+  .btn-themed:hover {
+    border-radius: 25px;
+    background-color: #16a085; }
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1abc9c;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px; }
+
+p {
+  font-size: 14px;
+  line-height: 26px; }
+
+.hero-scene {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #373737;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center bottom; }
+
+.menu {
+  height: 140px; }
+  .menu a {
+    margin: 20px 20px 0;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s; }
+    .menu a:hover {
+      color: #1abc9c !important; }
+  .menu .nav-logo {
+    margin-top: -20px; }
+
+.cta-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: calc(100vh - 52px);
+  width: 100%;
+  text-align: center; }
+  .cta-text h1 {
+    color: #fff;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700; }
+  .cta-text p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 4px; }
+
+.social {
+  text-align: center; }
+  .social i {
+    margin: 0 9px 26px;
+    color: #fff;
+    font-size: 26px;
+    transition: .5s; }
+    .social i:hover {
+      color: #1abc9c; }
+
+.promo-block-left {
+  width: 100%;
+  background-color: #f5f6f7; }
+  .promo-block-left .container {
+    background: url(../img/hand-phone.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    padding-top: 90px;
+    min-height: 493px; }
+  .promo-block-left g
+  h3 {
+    padding-top: 18px;
+    padding-bottom: 28px; }
+  .promo-block-left p {
+    padding-bottom: 7px; }
+
+@media (max-width: 992px) {
+  li.nav-logo {
+    display: none; } }
+
+/*# sourceMappingURL=style.prefixed.css.map */
