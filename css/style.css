@@ -157,6 +157,93 @@ p {
     .community-slider a:hover {
       color: #1abc9c; }
 
+.subscribe {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #373737;
+  background-image: url("../img/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .subscribe h2 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .subscribe input {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 260px;
+    padding: 15px;
+    outline: none;
+    vertical-align: baseline; }
+  .subscribe button {
+    border-radius: 0 5px 5px 0;
+    padding: 15px 17px 14px 17px;
+    transform: translateY(-2px);
+    display: inline-block; }
+    .subscribe button:hover {
+      border-radius: 0 5px 5px 0; }
+    .subscribe button i {
+      font-size: 24px; }
+
+.download {
+  width: 100%;
+  background-color: #f5f6f7;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  .download h3 {
+    color: #373737; }
+  .download p {
+    text-transform: uppercase;
+    padding: 10px 10% 0; }
+  .download button {
+    margin-right: 20px;
+    border-radius: 4px;
+    padding: 0 0 0 30px; }
+    .download button:hover {
+      border-radius: 4px; }
+    .download button i {
+      font-size: 20px;
+      background-color: #16a085;
+      padding: 15px;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      margin-left: 30px; }
+
+footer {
+  padding: 45px 0 20px 0; }
+  footer img {
+    float: right; }
+  footer ul {
+    list-style-type: none;
+    padding: 0; }
+    footer ul li {
+      display: inline-block;
+      font-size: 12px; }
+      footer ul li:after {
+        content: "|";
+        padding: 0 10px;
+        color: #1abc9c; }
+      footer ul li:last-of-type:after {
+        content: ""; }
+  footer a {
+    display: inline-block;
+    color: #373737;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; }
+    footer a:hover {
+      color: #1abc9c;
+      text-decoration: none; }
+
 @media (min-width: 768px) and (max-width: 992px) {
   li.nav-logo {
     display: none; }
