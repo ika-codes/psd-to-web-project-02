@@ -12,6 +12,10 @@ $bg-light: #f5f6f7;
 	font-family: $font;
 }
 
+body {
+	position: relative;
+}
+
 .btn-themed {
 	display: inline-block;
 	margin: 20px 0;
@@ -57,6 +61,11 @@ p {
 	background-position: center bottom;
 }
 
+nav {
+	transition: 1s;
+	padding: 0 !important;
+}
+
 .menu {
 	height: 140px;
 	a {
@@ -69,10 +78,24 @@ p {
 		&:hover {
 			color: $secondary !important;
 		}
+		&.active {
+			color: $secondary !important;
+		}
 	}
 	.nav-logo {
 		margin-top: -20px;
 	}
+}
+
+.sticky {
+	background-color: rgba(0, 0, 0, .8);
+	transform: translateY(-10px);
+	padding: 0;
+	height: 100px;
+}
+
+.name-hidden {
+	display: none;
 }
 
 .cta-text {
@@ -150,26 +173,26 @@ p {
 }
 
 .design-nav {
-		font-size: 10px;
-		font-weight: 700;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		transition: .5s;
-		a {
-			font-size: 22px;
-			margin-right: 10px;
-			color: $text-dark;
-			text-decoration: none;
-			&:hover {
-				color: $secondary;
-			}
+	font-size: 10px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: .5s;
+	a {
+		font-size: 22px;
+		margin-right: 10px;
+		color: $text-dark;
+		text-decoration: none;
+		&:hover {
+			color: $secondary;
 		}
+	}
 }
 
 .community {
 	width: 100%;
 	background-color: $bg-light;
-	padding: 90px;
+	padding: 90px 0;
 	text-align: center;
 	.logo-green {
 		padding: 65px 0 30px 0;
@@ -310,7 +333,8 @@ footer {
    }
 }
 
-@media(min-width: 768px) and (max-width: 992px) {
+
+@media (max-width: 992px) {
 	li.nav-logo {
 		display: none;
 	}
@@ -319,25 +343,69 @@ footer {
 		margin: 0 0 50px 20px;
 	}
 
+	.community-slide {
+		padding-bottom: 20px;
+	}
+
+	.menu {
+	height: 80px;
+	background-color: #1d1520;
+		.toggled {
+			background-color: #1d1520;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		a {
+			text-align: center;
+			margin: 10px 0;
+			color: $text-light !important;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 2px;
+			transition: .5s;
+			&:hover {
+				color: $secondary !important;
+			}
+			&.active {
+				color: $secondary !important;
+			}
+		}
+	}
+
+	.menu-toggle {
+		margin-left: 20px;
+	}
+
+	.sticky {
+		background-color: #1d1520;
+		transform: translateY(0px);
+		padding: 0;
+		height: 80px;
+	}
+
+	.name-hidden {
+		display: inline-block;
+		padding-right: 80px;
+		&:hover {
+			text-decoration: none;
+		}
+		img {
+			height: 40px;
+			margin: 0 20px 10px;
+		}
+	}
 }
 
 @media(max-width: 767px) {
-	li.nav-logo {
-		display: none;
-	}
-
-	.promo-left {
-		margin: 0 0 50px 20px;
-	}
-
+	
 	.promo-block-left {
 		.container {
 			background: none;
 		}
 	}
 
-	.community-slide {
-		padding-bottom: 20px;
+	.name-hidden {
+		padding-right: 40px;
 	}
 
 }

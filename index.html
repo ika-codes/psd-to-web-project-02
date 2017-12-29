@@ -8,32 +8,35 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.prefixed.css" type="text/css">
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#navigation-bar">
 		<section class="hero-scene">
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse justify-content-md-center collapse" id="navMenu" style="">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Photoapp</a>
-						</li>
-						<li class="nav-item nav-logo">
-							<a class="nav-link" href="#"><img src="img/logo.png" alt="Logo"></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Design</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Download</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<div id="navigation-bar">
+				<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
+					<button class="navbar-toggler collapsed menu-toggle" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a href="#" class="name-hidden mx-auto"><img src="img/logo.png" alt="Logo">Photoapp</a>
+					<div class="navbar-collapse justify-content-md-center collapse toggled" id="navMenu" style="">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#photoapp">Photoapp</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#design">Design</a>
+							</li>
+							<li class="nav-item nav-logo">
+								<a class="nav-link active" href="#"><img src="img/logo.png" alt="Logo"></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#community">Community</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#download">Download</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 			<div class="container cta-text">
 				<div class="row">
 					<div class="col-sm">
@@ -53,7 +56,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="promo-block-left">
+		<section class="promo-block-left" id="photoapp">
 			<div class="container">
 				<div class="row justify-content-start">
 					<div class="col-md-6 col-12 promo-left">
@@ -68,7 +71,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="promo-block-design">
+		<section class="promo-block-design" id="design">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 order-2 order-md-1">
@@ -117,7 +120,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="community">
+		<section class="community" id="community">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -143,7 +146,7 @@
 										<div class="col-md-6 col-xs-12 community-slide">
 											<img class="d-block w-100" src="img/slider-img-1.jpg" alt="First hue">
 										</div>
-										<div class="col-md-6 col-xs-12">
+										<div class="col-md-6 col-xs-12 community-slide">
 											<img class="d-block w-100" src="img/slider-img-2.jpg" alt="First hue">
 										</div>
 									</div>
@@ -153,7 +156,7 @@
 										<div class="col-md-6 col-xs-12 community-slide">
 											<img class="d-block w-100" src="img/slider-img-3.jpg" alt="First hue">
 										</div>
-										<div class="col-md-6 col-xs-12">
+										<div class="col-md-6 col-xs-12 community-slide">
 											<img class="d-block w-100" src="img/slider-img-4.jpg" alt="First hue">
 										</div>
 									</div>
@@ -170,7 +173,7 @@
 				<input type="email" name="email" placeholder="YOUR EMAIL"><button class="btn btn-themed"><i class="fa fa-check"></i></button>
 			</form>
 		</section>
-		<section class="download text-center">
+		<section class="download text-center" id="download">
 			<div class="container">
 				<h3>Download it</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
